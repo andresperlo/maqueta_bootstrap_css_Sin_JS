@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primera Maqueta Bootstrap 5</title>
+    <title>JS - LocalStorage</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -38,15 +38,16 @@
     <!--main  -->
     <h2 class="text-center my-3">Iniciar Sesion</h2>
     <form action="" class="form">
-        <input type="text" placeholder="usuario" class="input-class">
-        <input type="text" placeholder="contraseña" class="my-3 input-class">
+        <input type="text" placeholder="usuario" class="input-class" id="user">
+        <input type="password" placeholder="contraseña" class="my-3 input-class" id="pass">
         <p class="text-center">Si todavia no tenes una Cuenta. Haz click <a href="./register.html">aqui</a></p>
-        <button type="button">Iniciar Sesion</button>
+        <button type="button" id="botonLogin" onclick="login()">Iniciar Sesion</button>
     </form>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+        <script src="../js/login.js"></script>
 </body>
 
 </html>
